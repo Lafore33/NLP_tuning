@@ -4,9 +4,9 @@ from spacy.training import Example
 import numpy as np
 import json
 from random import shuffle
+from spacy import Language
 
-
-def train_fn(model, data, epochs, batch_size=5):
+def train_fn(model: Language, data: list[dict], epochs: int, batch_size: int = 5) -> None:
     optimizer = model.resume_training()
     loss_history = []
     size = len(data)
@@ -36,7 +36,7 @@ def train_fn(model, data, epochs, batch_size=5):
             show_losses(loss_history)
 
 
-def show_losses(train_loss_hist):
+def show_losses(train_loss_hist: list[float]) -> None:
     plt.figure()
     plt.plot(np.arange(len(train_loss_hist)), train_loss_hist)
     plt.title("Train Loss")
@@ -45,7 +45,7 @@ def show_losses(train_loss_hist):
     plt.show()
 
 
-def load_data(filename):
+def load_data(filename: str) -> list[dict]:
     with open(filename, "r") as file:
         data = json.load(file)
 
@@ -59,7 +59,7 @@ def load_data(filename):
     return train_data
 
 
-def test(model, tuned_model_path, data):
+def test(model: Language, tuned_model_path: str, data: str) -> None:
     tuned_nlp = spacy.load(tuned_model_path)
     doc = model(data)
     tuned_doc = tuned_nlp(data)
@@ -71,9 +71,9 @@ def test(model, tuned_model_path, data):
         print(ent.text, ent.label_)
 
 
-def main():
+def main() -> None:
     nlp = spacy.load("en_core_web_lg")
-    train_mode = False
+    train_mode = True
     data_file = "data.json"
     model_folder = "tuned_model"
 
