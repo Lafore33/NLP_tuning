@@ -1,0 +1,139 @@
+{
+  "annotations": [
+    {
+      "text": "Manchester United won the game",
+      "entities": [
+        {
+          "start": 0,
+          "end": 17,
+          "label": "FOOTBALL_CLUB"
+        }
+      ]
+    },
+    {
+      "text": "Real Madrid will play against Barcelona next week",
+      "entities": [
+        {
+          "start": 0,
+          "end": 11,
+          "label": "FOOTBALL_CLUB"
+        },
+        {
+          "start": 30,
+          "end": 39,
+          "label": "FOOTBALL_CLUB"
+        }
+      ]
+    },
+    {
+      "text": "Chelsea defeated Liverpool at home",
+      "entities": [
+        {
+          "start": 0,
+          "end": 7,
+          "label": "FOOTBALL_CLUB"
+        },
+        {
+          "start": 17,
+          "end": 26,
+          "label": "FOOTBALL_CLUB"
+        }
+      ]
+    },
+    {
+      "text": "Bayern Munich is a strong team in Germany",
+      "entities": [
+        {
+          "start": 0,
+          "end": 13,
+          "label": "FOOTBALL_CLUB"
+        },
+        {
+          "start": 34,
+          "end": 41,
+          "label": "GPE"
+        }
+      ]
+    },
+    {
+      "text": "Paris Saint-Germain won their last match",
+      "entities": [
+        {
+          "start": 0,
+          "end": 19,
+          "label": "FOOTBALL_CLUB"
+        }
+      ]
+    },
+    {
+      "text": "Juventus will face Inter Milan in the final",
+      "entities": [
+        {
+          "start": 0,
+          "end": 8,
+          "label": "FOOTBALL_CLUB"
+        },
+        {
+          "start": 19,
+          "end": 30,
+          "label": "FOOTBALL_CLUB"
+        }
+      ]
+    },
+    {
+      "text": "Atletico Madrid is competing for the title",
+      "entities": [
+        {
+          "start": 0,
+          "end": 15,
+          "label": "FOOTBALL_CLUB"
+        }
+      ]
+    },
+    {
+      "text": "Arsenal and Tottenham are rivals in London",
+      "entities": [
+        {
+          "start": 0,
+          "end": 7,
+          "label": "FOOTBALL_CLUB"
+        },
+        {
+          "start": 12,
+          "end": 21,
+          "label": "FOOTBALL_CLUB"
+        },
+        {
+          "start": 36,
+          "end": 42,
+          "label": "GPE"
+        }
+      ]
+    },
+    {
+      "text": "AC Milan and AS Roma will play tomorrow",
+      "entities": [
+        {
+          "start": 0,
+          "end": 8,
+          "label": "FOOTBALL_CLUB"
+        },
+        {
+          "start": 13,
+          "end": 20,
+          "label": "FOOTBALL_CLUB"
+        }
+      ]
+    },
+    {
+      "text": "Borussia Dortmund is known for its youth academy",
+      "entities": [
+        {
+          "start": 0,
+          "end": 17,
+          "label": "FOOTBALL_CLUB"
+        }
+      ]
+    }
+  ]
+}
